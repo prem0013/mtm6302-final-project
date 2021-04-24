@@ -1,0 +1,158 @@
+body {
+	margin: 0px auto;
+	background: #c6c8ca;
+}
+
+#sidebar{
+	position: fixed;
+	top: 80px;
+	left: 0;
+	font-size: 30px;
+	color: #fff;
+	background-color: #ef5252;
+	border-color: #ef5252;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#sidebar:hover{
+	background-color: #111;
+	border-color: #111;
+}
+
+#more{
+	position: fixed;
+	bottom: 0;
+	left: 46%;
+	font-size: 20px;
+	color: #fff;
+	padding: 1px 25px;
+	background-color: #ef5252;
+	border-color: #ef5252;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+#more:hover{
+	background-color: #111;
+	border-color: #111;
+}
+
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	color: #c6c8ca;
+}
+
+.morebar {
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	color: #c6c8ca;
+}
+
+.container {
+	margin: 50px auto;
+}
+
+#close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#close:hover{
+	color: #ef5252;
+}
+
+#moreClose{
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+
+#moreClose:hover{
+	color: #ef5252;
+}
+
+h2 {
+	text-align: center;
+	font-size: 28px;
+}
+
+.form-class{
+	padding-top: 10px;
+}
+
+h4 {
+	padding-left: 10px;
+	font-size: 22px;
+}
+
+h5 {
+	text-align: center;
+	font-size: 22px;
+	color: #fff;
+	font-weight: 800;
+}
+
+h6 {
+	text-align: center;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.custom-radio{
+	padding: 15px;
+}
+
+.myButton {
+	background-color: #fff;
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0px 0px 0px;
+	font-weight: 500;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.myButton:hover {
+	color: #fff;
+	background-color: #ef5252;
+}
+
+.clock-box{
+	padding-top: 150px;
+}
+
+#clock{
+	text-align: center;
+	font-size: 80px;
+	color: #fff;
+}
+
+.session{
+	font-size: 40px;
+}
+
+.date{
+	font-size: 30px;
+}

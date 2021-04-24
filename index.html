@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Digital Clock</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<button id="sidebar"><i class="fa fa-cog" aria-hidden="true"></i></button>
+	<button id="more">More</button>
+	<div class="clock-box">
+		<h5><span id="greetings"></span>. It is currently</h5>
+		<div onload="clock" id="clock"></div>
+	</div>
+
+	<!--sidebar begins-->
+	<div id="mySidebar" class="sidebar">
+		<div class="container">
+			<p id="close" class="clearfix"><i class="fa fa-close" aria-hidden="true"></i></p>
+			<h2>Settings</h2>
+			<form name="myForm">
+				<div class="form-class">
+					<h4>24 hour clock</h4>
+					<label class="custom-radio">
+						<input type="radio" name="hours" value="0" checked> Yes
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="hours" value="1"> No
+					</label>
+				</div>
+
+				<div class="form-class">
+					<h4>Show seconds</h4>
+					<label class="custom-radio">
+						<input type="radio" name="seconds" value="0" checked> Yes
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="seconds" value="1"> No
+					</label>
+				</div>
+
+				<div class="form-class">
+					<h4>Show Date</h4>
+					<label class="custom-radio">
+						<input type="radio" name="dates" value="0" checked> Yes
+					</label>
+					<label class="custom-radio">
+						<input type="radio" name="dates" value="1"> No
+					</label>
+				</div>
+			</form>
+			<button id="myFormButton" class="myButton">Save</button>
+		</div>
+	</div>
+	<!--sidebar ends-->
+
+	<!--bottombar begins-->
+	<div id="myMorebar" class="morebar">
+		<div class="container">
+			<p id="moreClose" class="clearfix"><i class="fa fa-close" aria-hidden="true"></i></p>
+			<div class="row">
+				<div class="col-md-6 p-4">
+					<h6>Day of the week</h6>
+					<h5 id="weekDay"></h5>
+				</div>
+				<div class="col-md-6 p-4">
+					<h6>Day of the month</h6>
+					<h5 id="monthDay"></h5>
+				</div>
+				<div class="col-md-6 p-4">
+					<h6>Day of the year</h6>
+					<h5 id="yearDay"></h5>
+				</div>
+				<div class="col-md-6 p-4">
+					<h6>Week of the Year</h6>
+					<h5 id="weekYear"></h5>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--bottombar ends-->
+
+</body>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</html>
